@@ -1,0 +1,55 @@
+
+
+*[tooltip] {
+
+  position: relative;
+  cursor: default;
+
+  &::after {
+      content: attr(tooltip);
+      position: absolute;
+      width: 160px;
+      left: calc(50% - 80px);
+      background-color: $color-secondary-dark;
+      bottom: 125%;
+      text-align: center;
+      color: white;
+      padding: 2px 0;
+      border-radius: 4px;
+      box-sizing: border-box;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.2s;
+  }
+
+  &.bottom {
+
+      &::after {
+          bottom: -125%;
+          content: attr(tooltip);
+          padding: 2px 0;
+          transform: translateY(0);
+      }
+
+      &:hover {
+          &::after {
+              transform: translateY(10px);
+          }
+      }
+
+
+  }
+
+  &:hover {
+      cursor: pointer;
+
+      &::after {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+      }
+
+  }
+
+}

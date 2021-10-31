@@ -1,0 +1,92 @@
+.sidenav {
+  $nav-item-active-color: white;
+
+  height: 100%;
+  width: 14rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  @mixin hover_effect {
+    background: $color-secondary;
+    color: $nav-item-active-color;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  &-image {
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  &-nav {
+    overflow-y: scroll;
+    flex: 1;
+    @include add_scrollbar();
+
+    &__nav-items {
+      padding: 0;
+      margin: 0;
+      width: 95%;
+      list-style: none;
+
+      .sidenav-nav__nav-item {
+        display: flex;
+        padding: 7.5px 0;
+        margin: 20px 0;
+        align-items: center;
+
+        &:focus,
+        &:active {
+          outline: none;
+        }
+
+        &.active {
+          background: $color-primary;
+          color: $nav-item-active-color;
+          border-top-right-radius: 100px;
+          border-bottom-right-radius: 100px;
+
+          & svg.icon {
+            fill: #fff;
+          }
+
+          &:hover {
+            background: $color-primary;
+            color: $nav-item-active-color;
+          }
+
+          .sidenav-nav__nav-item-link {
+            color: white;
+          }
+        }
+
+        &:hover {
+          @include hover_effect();
+          cursor: pointer;
+        }
+
+        &-image {
+          padding: 0 10px;
+        }
+
+        &-link {
+          padding: 0 10px;
+          text-decoration: none;
+          color: gray;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  svg {
+    height: 24px;
+    width: 30px;
+    padding-left: 2rem;
+    fill: #585858;
+  }
+}

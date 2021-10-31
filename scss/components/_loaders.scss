@@ -1,0 +1,30 @@
+// #fbcacc
+
+.loader-container {
+  width: 100%;
+  // border: 1px solid #ccc;
+  height: 6px;
+
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .loader {
+    width: 0%;
+    height: 100%;
+    background-color: #fbcacc;
+    animation-name: load_container;
+    animation-duration: 2s;
+    backface-visibility: hidden;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes load_container {
+  // @for $i from 1 through 5 {
+  //   @include add_load_step($i * 20)
+  // }
+}

@@ -1,0 +1,61 @@
+ul.breadcrumbs-container {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  li.crumb {
+
+    position: relative;
+
+    &::after {
+      content: "/";
+      margin-left: 10px;
+      font-size: 1.1rem;
+      color: #1A1A1AB8;
+    }
+
+    &.active-crumb {
+      color: $color-primary;
+      font-size: 1.4rem;
+      margin-top: -6px;
+      margin-left: 10px;
+
+      &::after {
+        content: "";
+      }
+
+      a.crumb-link {
+        color: $color-primary;
+
+        &:hover {
+          pointer-events: none;
+        }
+
+      }
+
+    }
+
+    a.crumb-link {
+      color: #1A1A1AB8;
+      font-size: 1.1rem;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+}
+
+.reposition-breadcrumbs {
+
+  position: fixed;
+  z-index: 10000000000000000;
+  top: 22.5px;
+
+}

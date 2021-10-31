@@ -1,0 +1,110 @@
+* {
+  font-family: $default-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  font-family: $font-heading-semibold;
+}
+
+span,
+p,
+td,
+a,
+li,
+label,
+input,
+textarea,
+article,
+button,
+section {
+  font-family: $font-text-regular;
+  font-size: 0.85rem;
+}
+
+.heading {
+  &__regular {
+    font-family: $font-heading-regular;
+  }
+
+  &__1 {
+    font-size: 3.5rem;
+  }
+
+  &__2 {
+    font-size: 2.5rem;
+  }
+
+  &__3 {
+    font-size: 1.8rem;
+  }
+
+  &__4 {
+    font-size: 1.5rem;
+  }
+
+  &__5 {
+    font-size: 1.2rem;
+  }
+
+  &__6 {
+    font-size: 1rem;
+  }
+}
+
+.text {
+  &__small {
+    font-size: 0.8rem;
+  }
+
+  &__default {
+    font-size: 0.85rem;
+  }
+
+  &__medium {
+    font-size: 1.2rem;
+  }
+
+  &__large {
+    font-size: 1.5rem;
+  }
+
+  &__bold {
+    font-family: $font-text-semibold;
+  }
+
+  &-bold__500 {
+    font-weight: 500;
+  }
+
+  &-bold__600 {
+    font-weight: 600;
+  }
+
+  &-bold__700 {
+    font-weight: 700;
+  }
+
+  &__italics {
+    font-style: italic;
+  }
+}
+
+.text-dashboard-gray {
+  color: $color-dashboard-sub-gray;
+}
+
+.sub-text {
+  padding: 10px 0;
+  display: block;
+}
+
+.top-section {
+  padding-top: 40px;
+  // padding-bottom: 100px;
+}

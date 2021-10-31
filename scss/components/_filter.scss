@@ -1,0 +1,51 @@
+.filter-container {
+  width: 570px;
+  position: relative;
+
+  button.filter-button.active {
+    background-color: $color-primary;
+    color: white;
+
+    &.filter-button::after {
+      filter: brightness(100);
+    }
+  }
+
+  .filter-content {
+    padding: 20px;
+    width: 400px;
+    position: absolute;
+    border-radius: 4px;
+    margin-top: 10px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.4rem #9c989829;
+
+    .filter-group {
+      margin-top: 10px;
+
+      &-label {
+        color: #1a1a1ab8;
+        display: block;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      &-input {
+        width: calc(100% - 20px);
+        outline: none;
+        border: none;
+        display: block;
+        border-radius: 4px;
+        padding: 5px 0 5px 10px;
+        font-size: 0.75rem;
+        border: 1px solid #dfdede;
+      }
+
+      select {
+        width: calc(100% - 8px);
+        margin-right: 0;
+      }
+    }
+  }
+}

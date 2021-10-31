@@ -1,0 +1,180 @@
+
+.text-center {
+  text-align: center;
+}
+
+// wrap utilities
+
+.white-space-wrap {
+  white-space: normal;
+}
+
+// margin utilities
+
+.mt-1 {
+  margin-top: .5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 2.5rem;
+}
+
+.mb-1 {
+  margin-bottom: .5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 2.5rem;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-margin-t {
+  margin-top: 0 !important;
+}
+
+.no-margin-b {
+  margin-bottom: 0 !important;
+}
+
+.no-margin-l {
+  margin-left: 0 !important;
+}
+
+.no-margin-r {
+  margin-right: 0 !important;
+}
+
+.no-margin-x {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.no-margin-y {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+// ========
+
+.line {
+  position: absolute;
+  right: 0;
+  width: 1px;
+  top: 20%;
+  bottom: 20%;
+  background-color: #f2f2f2;
+
+  &.line-full-height {
+    top: -20%;
+    bottom: 0;
+  }
+
+}
+
+// ========
+
+// padding utilities
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-padding-t {
+  padding-top: 0 !important;
+}
+
+.no-padding-b {
+  padding-bottom: 0 !important;
+}
+
+.no-padding-l {
+  padding-left: 0 !important;
+}
+
+.no-padding-r {
+  padding-right: 0 !important;
+}
+
+.no-padding-x {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.no-padding-y {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+// text utilities
+.text-warn {
+  color: $color-warn;
+}
+
+.text-error {
+  color: $error-color;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.text-gray {
+  color: $color-gray;
+}
+
+// display utilities
+.blocked {
+  display: block;
+}
+
+.inline-blocked {
+  display: inline-block;
+}
+
+.flexed {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.block-all {
+
+  * {
+    display: block;
+  }
+
+}
+
+// hover utilities
+.hovered:hover {
+  cursor: pointer;
+}

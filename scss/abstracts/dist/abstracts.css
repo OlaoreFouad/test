@@ -1,0 +1,12 @@
+/*
+To allow effective color management, we have various colors falling within shades 100 - 900. This refers to the opacity within the color with 100 being .1 and 900 being .9. Full color stays at 1000.
+*/
+:root {
+  --alert-color-success: #C8EAC4;
+  --alert-color-failure: #E5E2D8;
+  --alert-color-warning: #FDEBCA;
+  --flag-color-success: #13A500;
+  --color-primary: #ED1C25;
+  --flag-color-failure: #8E8358;
+  --flag-color-warning: #F6AA1C;
+  --color-black-900: #1A1A1AB8; }

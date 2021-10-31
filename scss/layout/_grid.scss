@@ -1,0 +1,98 @@
+
+
+.container, .container-fluid {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// styling for the row class
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(0 * -1);
+  margin-right: calc(.75rem / -2);
+  margin-left: calc(.75rem / -2);
+  margin-bottom: 20px; // testing purposes
+}
+
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(.75rem / 2);
+  padding-left: calc(.75rem / 2);
+  margin-top: 0;
+}
+
+// column specifications for various screen sizes
+.row {
+
+  @for $i from 1 through $columns {
+    &-col__#{ $i } {
+      flex: 0 0 auto;
+      width: ($i / $columns * 100) * 1%;
+    }
+  }
+
+  @media(min-width: $screen-size-sm) {
+
+    @for $i from 1 through $columns {
+      &-col__sm-#{ $i } {
+        flex: 0 0 auto;
+        width: ($i / $columns * 100) * 1%;
+      }
+
+    }
+    .col {
+      @include column_style(coral);
+    }
+
+  }
+
+  @media(min-width: $screen-size-md) {
+
+    @for $i from 1 through $columns {
+      &-col__md-#{ $i } {
+        flex: 0 0 auto;
+        width: ($i / $columns * 100) * 1%;
+      }
+    }
+
+    .col {
+      @include column_style(coral);
+    }
+
+  }
+
+  @media (min-width: $screen-size-lg) {
+    @for $i from 1 through $columns {
+      &-col__lg-#{ $i } {
+        flex: 0 0 auto;
+        width: ($i / $columns * 100) * 1%;
+      }
+    }
+
+    .col {
+      @include column_style(coral);
+    }
+  }
+
+
+}
+
+.col {
+  @include column_style(coral);
+}
+
+.col-sm {
+  @include column_style(lightgreen);
+}
+
+.col-lg {
+  @include column_style(lightblue);
+}
+

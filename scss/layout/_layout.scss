@@ -1,0 +1,20 @@
+// layout styling
+main.layout-container {
+  width: 100vw;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+
+  .layout-container-content {
+    margin-left: 14rem;
+    width: 100%;
+
+    .content {
+      margin-top: 66px;
+      padding: 0px 20px;
+      height: calc(100% - 66px);
+      background-color: #f7f7f7;
+      z-index: 10;
+    }
+  }
+}

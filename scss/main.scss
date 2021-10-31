@@ -1,0 +1,46 @@
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./base/animations";
+@import "./base/base";
+@import "./base/fonts";
+@import "./base/media";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./components/alerts";
+@import "./components/breadcrumbs";
+@import "./components/breakdown";
+@import "./components/buttons";
+@import "./components/cards";
+@import "./components/charts";
+@import "./components/checkbox";
+@import "./components/file-upload";
+@import "./components/filter";
+@import "./components/inputs";
+@import "./components/labelled_dropdown";
+@import "./components/loaders";
+@import "./components/modals";
+@import "./components/pagination";
+@import "./components/radio";
+@import "./components/table";
+@import "./components/tabs";
+@import "./components/tooltip";
+@import "./components/switch";
+
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/side-navigation";
+@import "./layout/skeleton";
+@import "./layout/top-navigation";
+@import "./layout/layout";
+
+body {
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+}
+
+.apexcharts-menu-icon {
+  display: none !important;
+}

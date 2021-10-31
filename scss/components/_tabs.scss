@@ -1,0 +1,41 @@
+
+
+ul.tabs {
+
+  list-style: none;
+  display: flex;
+  padding: 3px 0;
+  border-bottom: 2px solid $color-lightgray;
+
+  li.tab-item {
+      color: $color-secondary-dark;
+      font-size: 1rem;
+      margin-right: 15px;
+      font-weight: bold;
+      display: inline-block;
+      position: relative;
+
+      &:hover {
+          cursor: pointer;
+      }
+
+      &.active {
+
+          color: $color-primary;
+
+          &::after {
+              content: '';
+              position: absolute;
+              left: 0;
+              right: 0;
+              height: 2px;
+              background-color: $color-primary;
+              border-radius: 2px;
+              top: calc(100% + 3px);
+          }
+
+      }
+
+  }
+
+}

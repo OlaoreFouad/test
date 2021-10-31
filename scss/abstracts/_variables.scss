@@ -1,0 +1,78 @@
+
+/*
+To allow effective color management, we have various colors falling within shades 100 - 900. This refers to the opacity within the color with 100 being .1 and 900 being .9. Full color stays at 1000.
+*/
+
+// _grids.scss
+$gutterX: 1.5rem;
+$gutterY: 0;
+$columns: 12;
+
+$screen-size-sm: 576px;
+$screen-size-md: 768px;
+$screen-size-lg: 992px;
+
+// colors
+$color-primary: #ED1C25;
+$color-primary-light: #FBCACC;
+$color-secondary: #F9F9F9;
+$color-secondary-dark: #767171;
+$color-warn: rgb(173, 173, 9); // to be replaced
+$color-success: #13A500;
+$error-color: #8E8358;
+$success-color: green;
+$color-gray: gray;
+$color-lightgray: #ccc;
+$color-disabled-inner: #E1E6F9;
+$color-disabled: #DFDEDE;
+
+$color-table-heading-secondary-bg: #DFDEDE;
+$color-table-heading-secondary-color: #767171;
+
+$color-dashboard-sub-gray: #1A1A1AB8;
+
+$color-black-900: #1A1A1AB8;
+
+$color-modal-bg: #fefefe;
+$color-modal-shadow: #33333329;
+$color-topnav-bg: #F7F7F7;
+$color-topnav-gravatar-color: #9C9898;
+$color-topnav-gravatar-bg: #F0F0F0;
+
+// _alerts.scss and _flags
+$alert-color-success: #C8EAC4;
+$alert-color-failure: #E5E2D8;
+$alert-color-warning: #FDEBCA;
+$flag-color-success: #13A500;
+$flag-color-failure: #8E8358;
+$flag-color-warning: #F6AA1C;
+
+// _buttons.scss
+$button-padding-lg: 15px 30px;
+$button-padding-sm: 5px 25px;
+$button-padding: 7.5px 30px;
+
+// measurements
+
+$inner-padding: 20px;
+
+// _fonts.scss
+$font-heading-regular: 'BrFirma R';
+$font-heading-semibold: 'BrFirma SB';
+$font-text-regular: 'Poppins R';
+$font-text-semibold: 'Poppins SB';
+
+
+:root {
+    --alert-color-success: #C8EAC4;
+    --alert-color-failure: #E5E2D8;
+    --alert-color-warning: #FDEBCA;
+    --flag-color-success: #13A500;
+    --color-primary: #ED1C25;
+    --flag-color-failure: #8E8358;
+    --flag-color-warning: #F6AA1C;
+    --color-black-900: #1A1A1AB8;
+
+}
+
+

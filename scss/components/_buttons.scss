@@ -1,0 +1,167 @@
+.mb {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: $button-padding;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  margin: 0 10px;
+  color: black;
+  position: relative;
+
+  &.icon-prepend {
+    position: relative;
+
+    padding-left: 15px !important;
+
+    &::after {
+      position: absolute;
+
+      left: 10px;
+
+      top: 10px;
+
+      bottom: 10px;
+    }
+
+    &.download-button::after {
+      content: url("https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__download__red.svg");
+      transform: scale(0.7);
+    }
+
+    &.add-button::after {
+      content: url("https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__add.svg");
+      transform: scale(0.7);
+    }
+  }
+
+  &.icon-append {
+    position: relative;
+
+    padding-right: 45px !important;
+
+    &::after {
+      position: absolute;
+
+      right: 13px;
+
+      top: 7px;
+
+      bottom: 10px;
+    }
+
+    &.filter-button::after {
+      content: url("https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg");
+      transform: scale(0.7);
+    }
+  }
+
+  &-group {
+    display: flex;
+    width: 100%;
+
+    &.send-right {
+      .btn:first-child {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &.flexed {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 7.5px 15px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin: auto 0 auto 10px;
+    }
+
+    &.icon-prepend {
+      img {
+        margin: auto 10px auto 0;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__lg {
+    padding: $button-padding-lg;
+  }
+
+  &__sm {
+    padding: $button-padding-sm;
+  }
+
+  &-outline-primary {
+    color: $color-primary;
+    background-color: #fff;
+    border: 1px solid $color-primary;
+    transition: all .5s;
+
+    &:hover {
+      color: $color-primary;
+      background-color: $color-primary-light;
+      border: 1px solid $color-primary-light;
+    }
+
+  }
+
+  &-transparent {
+    background-color: transparent;
+
+    color: black;
+
+    &:hover {
+      cursor: pointer;
+
+      background-color: $color-secondary;
+    }
+  }
+
+  &-white {
+    color: black;
+    background-color: white;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &-primary {
+    color: white;
+    background-color: $color-primary;
+  }
+
+  &-secondary {
+    background-color: $color-secondary;
+    color: black;
+  }
+
+  &-link {
+    color: $color-primary;
+
+    &.underlined-primary {
+      text-decoration: underline $color-primary;
+    }
+
+    &:hover {
+      text-decoration: underline $color-primary;
+      cursor: pointer;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

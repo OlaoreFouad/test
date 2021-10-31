@@ -1,0 +1,79 @@
+.multiple-file-upload-control {
+  background-color: $color-secondary;
+  border: 1px solid $color-secondary-dark;
+  border-style: dashed;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  align-items: center;
+
+  img {
+    margin-bottom: 10px;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.file-upload-control {
+  width: 100%;
+  background-color: $color-secondary;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  &.done,
+  &.view {
+    background-color: white;
+  }
+
+  &__name {
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .progress {
+      width: calc(100% - 20px);
+      border: none;
+      border-radius: 12px;
+      height: 8px;
+      $bar: #ededed;
+      margin-top: 2px;
+
+      background-color: $bar;
+
+      &.inprogress {
+        $value: #54be47;
+        @include customize_progressbar_value_and_bar($value);
+      }
+
+      &.failed {
+        $value: #8e8358;
+        @include customize_progressbar_value_and_bar($value);
+      }
+    }
+  }
+
+  &__image {
+    margin-right: 10px;
+  }
+
+  &__action {
+    margin-left: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

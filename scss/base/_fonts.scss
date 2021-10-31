@@ -1,0 +1,23 @@
+// custom fonts configuration
+
+@font-face {
+  src: url("https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/fonts/br_firma_regular.woff");
+  font-family: $font-heading-regular;
+}
+
+@font-face {
+  src: url("https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/fonts/br_firma_semibold.woff");
+  font-family: $font-heading-semibold;
+}
+
+@font-face {
+  src: url("https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/fonts/poppins_regular.woff");
+  font-family: $font-text-regular;
+}
+
+@font-face {
+  src: url("https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/fonts/poppins_semibold.woff");
+  font-family: $font-text-semibold;
+}
+
+$default-font: $font-text-regular;
